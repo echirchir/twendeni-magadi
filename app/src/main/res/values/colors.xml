@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/mine_shaft</color>
+    <color name="colorPrimaryDark">@color/mine_shaft</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mine_shaft">#303030</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="blue">#ADD8E6</color>
+    <color name="white">#fff</color>
+    <color name="cyan">#0FF</color>
+
+    <color name="sku_color">#89908f</color>
+
+    <color name="green">@android:color/holo_green_light</color>
+    <color name="grey">@android:color/darker_gray</color>
+    <color name="orange">#FFA500</color>
+    <color name="custom_blue">#BDBDD8</color>
+    <color name="red">#ff0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="special_background">#E43F3F</color>
+</resources>

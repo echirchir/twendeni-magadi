@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="My Dashboard"/>
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/account"
+            android:title="My Account"/>
+        <item
+            android:id="@+id/nav_members"
+            android:icon="@drawable/group"
+            android:title="Manage Members"/>
+        <item
+            android:id="@+id/nav_pledge"
+            android:icon="@drawable/pledge"
+            android:title="Make a Pledge"/>
+        <item
+            android:id="@+id/nav_contribute"
+            android:icon="@drawable/contribute_money"
+            android:title="Contribute"/>
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/event"
+            android:title="Events"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/nav_invite"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Invite"/>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

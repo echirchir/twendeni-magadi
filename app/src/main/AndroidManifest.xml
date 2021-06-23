@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.etma.main">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ETMApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.EndTimeMessageMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CreateAccountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_create_account"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.StatementsActivity"
+            android:label="@string/title_activity_statements"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PledgeHistoryActivity"
+            android:label="@string/title_activity_pledge_history"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MakeContributionActivity"
+            android:label="@string/title_activity_make_contribution"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ManageMembersActivity"
+            android:label="@string/title_activity_manage_members"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ProjectTargetActivity"
+            android:label="@string/title_activity_project_target"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activities.AddMemberActivity"
+            android:label="@string/title_activity_add_member"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MemberRelationshipsActivity"
+            android:label="@string/title_activity_member_relationships"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AddContributionActivity"
+            android:label="@string/title_activity_add_contribution"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AddPledgeActivity"
+            android:label="@string/title_activity_add_pledge"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.StakesActivity"
+            android:label="@string/title_activity_stakes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PaymentPeriodsActivity"
+            android:label="@string/title_activity_payment_periods"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/FullscreenTheme" />
+
+        <service
+            android:name=".services.InitialSetupService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.CreateMemberService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.RequestMembersService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.CreateMemberPledgeService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.PaymentModesActivity"
+            android:label="@string/title_activity_payment_modes"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".services.ProjectInformationService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.CreateAmortizationService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.AmortizationDetailActivity"
+            android:label="@string/title_activity_amortization_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PledgeDetailsActivity"
+            android:label="@string/title_activity_pledge_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".services.CreateContributionService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.ContributionPayActivity"
+            android:label="@string/title_activity_contribution_pay"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MpesaPaymentActivity"
+            android:label="@string/title_activity_mpesa_payment"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".services.RequestAmortizationsService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.LipaNaMpesaService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.DefaultPayActivity"
+            android:label="@string/title_activity_default_pay"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".services.RequestAllPledgesService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.DueContributionsActivity"
+            android:label="@string/title_activity_due_contributions"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".services.RequestMpesaPaymentsService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.RequestContributionsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.FlexPlanPledgeActivity"
+            android:label="@string/title_activity_flex_plan_pledge"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.FlexPledgeDetailActivity"
+            android:label="@string/title_activity_flex_pledge_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.VerifyPasswordResetActivity"
+            android:label="@string/title_activity_verify_password_reset"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.EnterEmailAddressActivity"
+            android:label="@string/title_activity_enter_email_address"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PasswordResetActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_password_reset"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ExtraMileCampaignsActivity"
+            android:label="@string/title_activity_extra_mile_campaigns"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.DonateExtraMileActivity"
+            android:label="@string/title_activity_donate_extra_mile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ChurchEventsActivity"
+            android:label="@string/title_activity_church_events"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".services.RequestChurchEventsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.EventDetailsActivity"
+            android:label="@string/title_activity_event_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
